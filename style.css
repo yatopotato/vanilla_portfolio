@@ -432,7 +432,7 @@ header {
   color: var(--clr-light-blue);
   letter-spacing: 2px;
   margin-bottom: 16px;
-  animation: fade-right 1.5s;
+  animation: fade-right 1s;
 }
 
 .big-heading {
@@ -445,7 +445,7 @@ header {
   letter-spacing: 2px;
   line-height: 0.7;
   margin-bottom: 56px;
-  animation: fade-left 1.5s;
+  animation: fade-left 1s;
 }
 
 .intro-text {
@@ -455,7 +455,7 @@ header {
   color: var(--clr-light-blue);
   letter-spacing: 2px;
   line-height: 2;
-  animation: fade-up 1.5s;
+  animation: fade-up 1s;
 }
 
 .intro-text mark {
@@ -598,7 +598,7 @@ footer {
 @keyframes fade-right {
   from {
     opacity: 0;
-    transform: translateX(-32px);
+    transform: translateX(-64px);
   }
 
   to {
@@ -610,7 +610,7 @@ footer {
 @keyframes fade-left {
   from {
     opacity: 0;
-    transform: translateX(32px);
+    transform: translateX(64px);
   }
 
   to {
@@ -693,16 +693,20 @@ footer {
   }
 
   .big-heading {
+    font-size: var(--fs-700);
     margin-bottom: 32px;
   }
 
   .intro-text {
     font-size: var(--fs-400);
-    font-weight: var(--fw-ubuntu-bold);
   }
 
   .intro-text mark {
     font-size: var(--fs-400);
     font-weight: var(--fw-ubuntu-bold);
+  }
+  
+  .social-links li {
+    margin-inline: 24px;
   }
 }
